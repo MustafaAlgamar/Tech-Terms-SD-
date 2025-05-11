@@ -1,0 +1,24 @@
+body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .term-card {
+            margin: 20px 0;
+        }
+
+        .category-title {
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .term-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #0056b3;
+        }
+        .definition {
+            font-size: 1rem;
+            color: #555;
+        }
