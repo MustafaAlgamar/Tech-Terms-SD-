@@ -1,4 +1,16 @@
-    // دالة لعرض المصطلحات على الصفحة
+let termsData = { terms: [] }; // متغير عام لتخزين البيانات
+
+fetch('terms.json')
+  .then(response => response.json())
+  .then(data => {
+    termsData = data;
+    displayTerms(termsData.terms);
+  })
+  .catch(error => {
+    console.error('خطأ في تحميل البيانات:', error);
+  });
+
+// دالة لعرض المصطلحات على الصفحة
     function displayTerms(filteredTerms) {
         const termsContainer = document.getElementById('termsContainer');
         termsContainer.innerHTML = '';  // مسح المحتوى السابق
