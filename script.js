@@ -10,9 +10,9 @@
                 <div class="card shadow-sm">
                     <div class="card-body">
                         <h5 class="term-title">term.term</h5>
-                        <h6 class="category-title">{term.category}</h6>
-                        <p class="definition">term.definition</p>
-                        <p><strong>الترجمة:</strong>{term.translation}</p>
+                        <h6 class="category-title">${term.category}</h6>
+                        <p class="definition">${term.definition}</p>
+                        <p><strong>الترجمة:</strong>${term.translation}</p>
                     </div>
                 </div>
             `;
