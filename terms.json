@@ -1,8 +1,4 @@
-
-    // البيانات بصيغة JSON
-    const termsData = {
-        "terms": [
-            {
+        {"terms" : [   {
                 "term": "Artificial Intelligence (AI)",
                 "translation": "الذكاء الاصطناعي",
                 "definition": "لما نخلي الكمبيوترات تتصرف زي البشر، يعني تفهم، تتعلم، وتاخد قرارات.",
@@ -23,8 +19,7 @@
             {
                 "term": "Firewall",
                 "translation": "جدار ناري",
-                "definition": "نظام بيحمي الشبكة من الوصولات غير المصرح بها.",
-              "category": "الشبكات وأمن المعلومات"
+                "definition": "نظام بيحمي الشبكة من الوصولات غير المصرح بها.","category": "الشبكات وأمن المعلومات"
             },
             {
                 "term": "Cloud Computing",
@@ -53,7 +48,7 @@
             {
                 "term": "HTML (Hypertext Markup Language)",
                 "translation": "لغة ترميز النص التشعبي",
-                "definition": "اللغة الأساسية لبناء صفحات الويب.",
-              "category": "تطوير الويب"
+                "definition": "اللغة الأساسية لبناء صفحات الويب.","category": "تطوير الويب"
             }
         ]
+        }
