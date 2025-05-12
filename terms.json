@@ -1,0 +1,54 @@
+        {"terms" : [   {
+                "term": "Artificial Intelligence (AI)",
+                "translation": "الذكاء الاصطناعي",
+                "definition": "لما نخلي الكمبيوترات تتصرف زي البشر، يعني تفهم، تتعلم، وتاخد قرارات.",
+                "category": "الذكاء الاصطناعي"
+            },
+            {
+                "term": "Machine Learning",
+                "translation": "تعلم الآلة",
+                "definition": "جزء من الذكاء الاصطناعي، بنخلي الكمبيوتر يتعلم من البيانات بدون ما نبرمجه خطوة بخطوة.",
+                "category": "الذكاء الاصطناعي"
+            },
+            {
+                "term": "Algorithm",
+                "translation": "خوارزمية",
+                "definition": "مجموعة خطوات لحل مشكلة معينة.",
+                "category": "تطوير البرمجيات"
+            },
+            {
+                "term": "Firewall",
+                "translation": "جدار ناري",
+                "definition": "نظام بيحمي الشبكة من الوصولات غير المصرح بها.","category": "الشبكات وأمن المعلومات"
+            },
+            {
+                "term": "Cloud Computing",
+                "translation": "الحوسبة السحابية",
+                "definition": "استخدام موارد الحوسبة عبر الإنترنت بدلاً من جهازك المحلي.",
+                "category": "الحوسبة السحابية"
+            },
+            {
+                "term": "Git",
+                "translation": "جيت",
+                "definition": "نظام لإدارة الإصدارات بيساعد المطورين يتابعوا التغييرات في الكود.",
+                "category": "أدوات التطوير"
+            },
+            {
+                "term": "CPU (Central Processing Unit)",
+                "translation": "وحدة المعالجة المركزية",
+                "definition": "العقل المدبر للجهاز، بينفذ الأوامر والتعليمات.",
+                "category": "الأجهزة والمكونات"
+            },
+            {
+                "term": "Database",
+                "translation": "قاعدة البيانات",
+                "definition": "مكان بنخزن فيه البيانات بشكل منظم لسهولة الوصول والإدارة.",
+                "category": "قواعد البيانات"
+            },
+            {
+                "term": "HTML (Hypertext Markup Language)",
+                "translation": "لغة ترميز النص التشعبي",
+                "definition": "اللغة الأساسية لبناء صفحات الويب.","category": "تطوير الويب"
+            }
+        ]
+        }
