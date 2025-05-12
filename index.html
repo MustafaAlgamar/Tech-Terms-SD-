@@ -1,33 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>قاموس المصطلحات التقنية</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-<link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قاموس المصطلحات التقنية - Sudan Dev</title>
+    <!-- رابط لـ Bootstrap CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+     <link href="style.css" rel="stylesheet">
+   
 </head>
 <body>
 
-  <div class="container py-5">
-    <h1 class="mb-4 text-center">📘 قاموس المصطلحات التقنية</h1>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">قاموس المصطلحات التقنية - Sudan Dev</h1>
+    
+    <!-- مربع البحث -->
+    <div class="mb-4">
+        <input type="text" id="searchInput" class="form-control" placeholder="ابحث عن مصطلح..." onkeyup="filterTerms()">
+    </div>
 
-    <div class="row mb-3">
-      <div class="col-md-6 mb-2">
-        <input type="text" id="searchInput" class="form-control" placeholder="🔍 ابحث عن مصطلح...">
-      </div>
-      <div class="col-md-6">
-        <select id="categoryDropdown" class="form-select">
-          <option value="">📂 اختر فئة</option>
+    <!-- تصنيف المصطلحات -->
+    <div class="mb-4">
+        <label for="categorySelect">اختر الفئة:</label>
+        <select class="form-select" id="categorySelect" onchange="filterTerms()">
+            <option value="">جميع الفئات</option>
+            <option value="الذكاء الاصطناعي">الذكاء الاصطناعي</option>
+            <option value="تطوير البرمجيات">تطوير البرمجيات</option>
+            <option value="الشبكات وأمن المعلومات">الشبكات وأمن المعلومات</option>
+            <option value="الحوسبة السحابية">الحوسبة السحابية</option>
+            <option value="أدوات التطوير">أدوات التطوير</option>
+            <option value="الأجهزة والمكونات">الأجهزة والمكونات</option>
+            <option value="قواعد البيانات">قواعد البيانات</option>
+            <option value="تطوير الويب">تطوير الويب</option>
         </select>
-      </div>
     </div>
 
-    <div class="row" id="termsContainer">
-      <!-- المصطلحات ستظهر هنا -->
+    <!-- قسم العرض للمصطلحات -->
+    <div id="termsContainer" class="row">
+        <!-- ستظهر المصطلحات هنا بواسطة JavaScript -->
     </div>
-  </div>
+</div>
 
-  <script src="script.js"></script>
+<!-- رابط لـ Bootstrap JS و jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
