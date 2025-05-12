@@ -1,18 +1,16 @@
 
     // البيانات بصيغة JSON
     
-let termsData = { terms: [] }; // متغير عام لتخزين البيانات
-
-fetch('terms.json')
+fetch("terms.json")
   .then(response => response.json())
   .then(data => {
-    termsData = data;
-    displayTerms(termsData.terms);
+    terms = data.terms; // الوصول إلى المصفوفة داخل المفتاح "terms"
+    populateCategories();
+    displayTerms(terms);
   })
   .catch(error => {
-    console.error('خطأ في تحميل البيانات:', error);
+    console.error("خطأ في تحميل البيانات:", error);
   });
-
     // دالة لعرض المصطلحات على الصفحة
     function displayTerms(filteredTerms) {
         const termsContainer = document.getElementById('termsContainer');
