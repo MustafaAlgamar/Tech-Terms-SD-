@@ -1,4 +1,6 @@
-body {
+
+        /* تخصيص بعض الأنماط */
+        body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f9;
         }
@@ -22,3 +24,4 @@ body {
             font-size: 1rem;
             color: #555;
         }
+    
