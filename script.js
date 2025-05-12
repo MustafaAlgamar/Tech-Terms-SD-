@@ -1,18 +1,17 @@
 
     // البيانات بصيغة JSON
     
-let termsData = { terms: [] }; // متغير عام لتخزين البيانات
+const basePath = window.location.pathname.endsWith('/') ? window.location.pathname : window.location.pathname + '/';
+const termsPath = basePath + 'terms.json';
 
-fetch('terms.json')
+fetch(termsPath)
   .then(response => response.json())
   .then(data => {
-    termsData = data;
-    displayTerms(termsData.terms);
+    // التعامل مع البيانات
   })
   .catch(error => {
-    console.error('خطأ في تحميل البيانات:', error);
+    console.error("خطأ في تحميل البيانات:", error);
   });
-
     // دالة لعرض المصطلحات على الصفحة
     function displayTerms(filteredTerms) {
         const termsContainer = document.getElementById('termsContainer');
