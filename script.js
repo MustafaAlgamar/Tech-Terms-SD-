@@ -1,10 +1,9 @@
 
     // البيانات بصيغة JSON
     
-const basePath = window.location.pathname.endsWith('/') ? window.location.pathname : window.location.pathname + '/';
-const termsPath = basePath + 'terms.json';
 
-fetch(termsPath)
+
+fetch('terms.json')
   .then(response => response.json())
   .then(data => {
     // التعامل مع البيانات
